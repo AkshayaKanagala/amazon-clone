@@ -11,7 +11,7 @@ function Checkout({ subtotal, address, setAddress, goBack, continuePayment }) {
     setError(""); continuePayment();
   };
   return <main className="checkout-page">
-    <header className="checkout-header"><div className="checkout-logo">amazon<span>.in</span></div><h1>Checkout</h1><span>🔒</span></header>
+    <header className="checkout-header"><div className="checkout-logo">ShopNova<span> · A New World of Shopping</span></div><h1>Checkout</h1><span>🔒</span></header>
     <div className="checkout-layout"><section className="address-section"><h2><span>1</span>Enter a delivery address</h2>
       <form className="address-form" onSubmit={handleSubmit}>
         {error && <div className="form-error">⚠ {error}</div>}
