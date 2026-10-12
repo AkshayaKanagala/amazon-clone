@@ -13,7 +13,7 @@ function Header({ cartCount, goHome, goCart, search, setSearch, onNavClick }) {
     <>
       <header className="header">
         <button className="logo" onClick={goHome}>
-          ShopNova<span> · A New World of Shopping</span>
+          <span className="shopnova-brand-name">ShopNova</span><span className="shopnova-tagline">A New World of Shopping</span>
         </button>
         <div className="location">
           <span>Delivering to</span>
