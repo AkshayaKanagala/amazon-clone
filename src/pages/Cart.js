@@ -4,7 +4,7 @@ function Cart({ cart, subtotal, increaseQuantity, decreaseQuantity, removeItem, 
   const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
 
   if (cart.length === 0) {
-    return <main className="cart-page"><section className="empty-cart"><div className="empty-cart-icon">🛒</div><div><h1>Your Amazon Cart is empty</h1><p>Add some products and they will appear here.</p><button className="primary-button" onClick={continueShopping}>Continue Shopping</button></div></section></main>;
+    return <main className="cart-page"><section className="empty-cart"><div className="empty-cart-icon">🛒</div><div><h1>Your ShopNova Cart is empty</h1><p>Add some products and they will appear here.</p><button className="primary-button" onClick={continueShopping}>Continue Shopping</button></div></section></main>;
   }
 
   return <main className="cart-page"><div className="cart-layout"><section className="cart-products"><h1>Shopping Cart</h1><div className="cart-price-title">Price</div>
