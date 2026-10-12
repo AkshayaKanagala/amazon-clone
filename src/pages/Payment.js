@@ -2,7 +2,7 @@ import React, { useState } from "react";
 function Payment({ subtotal, address, goBack, placeOrder }) {
   const [method,setMethod]=useState("upi"); const [processing,setProcessing]=useState(false);
   const handlePlaceOrder=()=>{if(processing)return;setProcessing(true);setTimeout(()=>placeOrder(),1800);};
-  return <main className="payment-page"><header className="checkout-header"><div className="checkout-logo">amazon<span>.in</span></div><h1>Checkout</h1><span>🔒</span></header>
+  return <main className="payment-page"><header className="checkout-header"><div className="checkout-logo">ShopNova<span> · A New World of Shopping</span></div><h1>Checkout</h1><span>🔒</span></header>
     <div className="payment-layout"><section><div className="payment-address"><div><h3>1 Delivery address</h3><p><strong>{address.name}</strong><br/>{address.address}<br/>{address.city}, {address.state} - {address.pincode}</p></div><button className="link-button" onClick={goBack}>Change</button></div>
     <div className="payment-methods"><h2><span>2</span>Select a payment method</h2>
       <PaymentOption active={method==="upi"} title="UPI" subtitle="Google Pay, PhonePe, Paytm or any UPI app" onClick={()=>setMethod("upi")}><div className="payment-form"><label>Demo UPI ID<input placeholder="yourname@upi"/></label><div className="payment-brands"><span>G Pay</span><span>PhonePe</span><span>Paytm</span><span>UPI</span></div></div></PaymentOption>
