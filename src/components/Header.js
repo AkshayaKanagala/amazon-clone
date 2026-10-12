@@ -14,7 +14,7 @@ function Header({ cartCount, goHome, goCart, search, setSearch, onNavClick }) {
       <header className="header">
         <button className="logo" onClick={goHome}>
           amazon<span>.in</span>
-          <div className="amazon-smile">⌣</div>
+          <div className="shopnova-smile">⌣</div>
         </button>
         <div className="location">
           <span>Delivering to</span>
@@ -24,7 +24,7 @@ function Header({ cartCount, goHome, goCart, search, setSearch, onNavClick }) {
           <select aria-label="Category">
             <option>All</option><option>Electronics</option><option>Fashion</option><option>Home</option>
           </select>
-          <input type="text" placeholder="Search Amazon.in" value={search} onChange={(e) => setSearch(e.target.value)} />
+          <input type="text" placeholder="Search ShopNova" value={search} onChange={(e) => setSearch(e.target.value)} />
           {search && <button type="button" className="search-clear" onClick={() => setSearch("")}>×</button>}
           <button type="submit" className="search-button">🔍</button>
         </form>
@@ -35,7 +35,7 @@ function Header({ cartCount, goHome, goCart, search, setSearch, onNavClick }) {
       <nav className="nav">
         <button onClick={() => onNavClick("All")}>☰ All</button>
         <button onClick={() => onNavClick("Fresh")}>Fresh</button>
-        <button onClick={() => onNavClick("Amazon Pay")}>Amazon Pay</button>
+        <button onClick={() => onNavClick("ShopNova Pay")}>ShopNova Pay</button>
         <button onClick={() => onNavClick("Electronics")}>Electronics</button>
         <button onClick={() => onNavClick("Fashion")}>Fashion</button>
         <button onClick={() => onNavClick("Home")}>Home & Kitchen</button>
