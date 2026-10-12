@@ -1,8 +1,8 @@
 {
-  "name": "amazon-clone",
+  "name": "shopnova",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://AkshayaKanagala.github.io/amazon-clone",
+  "homepage": "https://AkshayaKanagala.github.io/shopnova",
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
