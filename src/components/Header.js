@@ -12,8 +12,9 @@ function Header({ cartCount, goHome, goCart, search, setSearch, onNavClick }) {
   return (
     <>
       <header className="header">
-        <button className="logo" onClick={goHome}>
-          <span className="shopnova-brand-name">ShopNova</span><span className="shopnova-tagline">A New World of Shopping</span>
+        <button className="logo" onClick={goHome} style={{display:"flex",flexDirection:"column",alignItems:"flex-start",justifyContent:"center",gap:"3px",lineHeight:1.1,flexShrink:0}}>
+          <span className="shopnova-brand-name" style={{display:"block",fontSize:"25px",fontWeight:700}}>ShopNova</span>
+          <span className="shopnova-tagline" style={{display:"block",fontSize:"10px",fontWeight:500,whiteSpace:"nowrap"}}>A New World of Shopping</span>
         </button>
         <div className="location">
           <span>Delivering to</span>
